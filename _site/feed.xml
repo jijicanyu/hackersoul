@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title></title>
+<description></description>  
+<link></link>
+<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+
+<item>
+<title>Mongodb未授权访问漏洞之某主机泄露新浪微博accessToken</title>
+<pubDate>Thu, 18 Dec 2014 00:00:00 +0800</pubDate>
+<link>/2014/12/18/mongodb_unauthorized_access_vulnerability_sinaweibo_app_accessToken.html</link>
+<guid isPermaLink="true">/2014/12/18/mongodb_unauthorized_access_vulnerability_sinaweibo_app_accessToken.html</guid>
+</item>
+
+</channel>
+</rss>
