@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<title></title>
-<description></description>  
-<link></link>
-<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+<title>HackerSoul - FF0000 TeAm</title>
+<description>Hacking for fun.</description>  
+<link>http://www.hackersoul.com</link>
+<atom:link href="http://www.hackersoul.com/feed.xml" rel="self" type="application/rss+xml" />
+
+<item>
+<title>Search Registration Version 1.0</title>
+<pubDate>Thu, 12 Mar 2015 00:00:00 +0800</pubDate>
+<link>http://www.hackersoul.com/2015/03/12/Search-Registration.html</link>
+<guid isPermaLink="true">http://www.hackersoul.com/2015/03/12/Search-Registration.html</guid>
+</item>
 
 <item>
 <title>Mongodb未授权访问漏洞之某主机泄露新浪微博accessToken</title>
 <pubDate>Thu, 18 Dec 2014 00:00:00 +0800</pubDate>
-<link>/2014/12/18/mongodb_unauthorized_access_vulnerability_sinaweibo_app_accessToken.html</link>
-<guid isPermaLink="true">/2014/12/18/mongodb_unauthorized_access_vulnerability_sinaweibo_app_accessToken.html</guid>
+<link>http://www.hackersoul.com/2014/12/18/mongodb_unauthorized_access_vulnerability_sinaweibo_app_accessToken.html</link>
+<guid isPermaLink="true">http://www.hackersoul.com/2014/12/18/mongodb_unauthorized_access_vulnerability_sinaweibo_app_accessToken.html</guid>
 </item>
 
 </channel>
